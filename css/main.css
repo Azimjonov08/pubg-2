@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #4C0070;
+}
+
+body::after {
+    content: "";
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/bagi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+body::before {
+    content: "";
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/bagi\ chap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 35px 0 135px 0;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-link {
+    padding: 12px 37px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    color: #FFF;
+    line-height: normal;
+    border-radius: 35px;
+    border: 2px solid #FFF;
+    transition: all 0.6s ease;
+}
+
+.header-link:hover {
+    color: #4C0070;
+    background-color: #fff;
+    box-shadow: 0 0 10px 2px black;
+
+}
+
+.header-link:active {
+    transition: all 0.2s ease;
+    color: #FFF;
+    background-color: #4C0070;
+    box-shadow: 0 0 10px 2px white;
+}
+
+/* HERO STYLE START */
+
+.hero-title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    color: #FADD08;
+    line-height: normal;
+    margin-bottom: 22px;
+}
+
+.hero-text {
+    width: 596px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFF;
+    line-height: normal;
+}
+
+.hero-center-bg {
+    position: absolute;
+    left: 37%;
+    bottom: 0;
+    /* transform: translate(-50%); */
+    width: 450px;
+    height: 450px;
+    background-image: url("../img/pubg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
